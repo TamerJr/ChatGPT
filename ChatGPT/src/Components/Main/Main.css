@@ -1,0 +1,167 @@
+.Main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: var(--font-family);
+}
+.Left{
+    display: flex;
+    flex-direction: column;
+}
+.Right{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 500px;
+}
+.Right img{
+    height: 80%;
+}
+.Left .Header{
+    margin-bottom: 1rem;
+}
+.Left .Header h1 {
+    font-size: 52px;
+    background-image:  var(--gradient-text);
+    background-size: 100%;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent; 
+}
+.Left .Description p{
+    color: var(--color-text);
+    line-height: 27px;
+    font-size: 19px;
+    font-weight: lighter;
+}
+.Left .Email {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+.Left .Email .npt{
+    padding: .75rem ;
+    border: none;
+    background-color: var(--color-blog);
+    outline: none;
+    color: aliceblue;
+    width: 70%;
+
+} 
+.Left .Email .btn{
+    padding:.75rem 1rem;
+    background: #FF4820;
+    border: none;
+    border-radius: 0  5px 5px 0 ;
+    color: aliceblue;
+    font-size: smaller;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+
+}
+.Left .People{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: .5rem;
+}
+.Left .People img{
+    width: 25%;
+}
+.Left .People p{
+    font-size: small;
+    margin-left: 1rem ;
+    color: var(--color-text);
+}
+@media only screen and (max-width : 1024px) {
+    .Left .Header h1 {
+        font-size: 42px;
+    }
+    .Left .Description p{
+        color: var(--color-text);
+        line-height: 20px;
+        font-size: 15px;
+        font-weight: light;
+    }
+    .Right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 450px;
+    }
+
+
+}
+@media only screen and (max-width : 970px) {
+    .Left .Header h1 {
+        font-size: 32px;
+    }
+    .Left .Description p{
+        font-size: 12px;
+    }
+    .Left .People p{
+        font-size:x-small;
+    }
+}
+@media only screen and (max-width : 845px) {
+    .Left .Header h1 {
+        font-size: 25px;
+    }
+    .Left .Description p{
+        font-size: xx-small;
+    }
+    .Left .People p{
+        font-size:xx-small;
+    }
+    .Right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+    }
+
+}
+@media only screen and (max-width : 725px) {
+    .Main{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: var(--font-family);
+    }
+
+}
+@media only screen and (max-width : 480px) {
+    .Left{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+
+    }
+    .Right{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 300px;
+    }
+    .Left .Email .npt{
+        padding: .4rem ;
+        background-color: var(--color-blog);
+        color: aliceblue;
+        width: 70%;
+    
+    } 
+    .Left .Email .btn{
+        padding:.54rem .5rem;
+        color: aliceblue;
+        font-size: x-small;
+    
+    }
+
+
+}
