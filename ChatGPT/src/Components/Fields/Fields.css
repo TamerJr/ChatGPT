@@ -1,0 +1,63 @@
+.Fields{
+    background-color: var(--color-blog);
+    font-family: var(--font-family);
+    padding: 5rem 3rem;
+}
+.Desc-container{
+    margin: 2rem 0;
+    padding: 3px;
+}
+.Data-collection{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+ 
+.Fields-first{
+    margin-bottom: 2rem;
+}
+.fields-text{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var( --gradient-text);
+    -webkit-background-clip:text ;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+}
+.Desc-container{
+    height: 250px;
+}
+
+.fields-text .header {
+    width: 50%;
+    margin: 0 0  .5rem 0;
+}
+.fields-text div h1{
+    font-size: 34px;
+}
+@media only screen and (max-width : 800px){
+    .Data-collection{
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        
+    }
+    .Desc-container{
+        margin:0 ;
+        height: fit-content;
+    }
+    .Desc-container p{
+        text-align: center;
+    }
+    .fields-text .header h1 {
+        font-size: 28px;
+}
+}
+@media only screen and (max-width : 550px){
+   .Fields{
+    padding: 5rem 1rem;
+   }
+}

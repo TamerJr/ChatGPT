@@ -1,0 +1,106 @@
+.Footer{
+    font-family: var(--font-family);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem 0;
+    color: aliceblue;
+    background-color: var(--color-footer);
+    
+}
+.Footer-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width :80%;
+}
+.Footer-Top-part h1{
+    text-align: center;
+    font-size: 62px;
+    background-image: var(--gradient-text);
+    -webkit-background-clip:text;
+    -moz-background-clop:text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-colo:transparent;
+}
+.Footer .Footer-Top-part{
+    margin: 4rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Footer .Footer-Top-part button{
+    margin-top: 2rem;
+    color: aliceblue;
+    padding: 20px 10px;
+    border: 1px solid white;
+    background-color:inherit;
+}
+.Footer .Footer-bottom-part{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 2rem;
+}
+.Footer .Footer-logo {
+    width:50% ;
+    height: 100%;
+    margin-right: 2rem;
+    grid-column:  1/2;
+
+}
+
+.Footer .Footer-logo img{
+    width:80px;
+    
+}
+.CopyRights{
+    font-size: 11px;
+}
+
+.Footer .Details {
+    grid-column:2 / 5 ;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.Footer .Details p{
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 2rem;
+}
+.Footer .Details ul{
+    list-style: none;
+
+}
+.Footer .Details ul li{
+    padding-left:0px;
+    font-size: 12px;
+    line-height: 3;
+}
+.Footer .Cop-Rights{
+    text-align: center;
+}
+ul li span{
+    display: block;
+    line-height: 1.5;
+}
+@media only screen and (max-width  : 700px){
+    .Footer .Footer-bottom-part{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+    }
+    .Footer-Top-part h1{
+        font-size: 24px;
+    }
+    .Footer .Footer-bottom-part .Details div{
+        margin-bottom: 2rem;
+    }
+    .Footer .Details div{
+        margin:0 1.5rem ;
+    }
+}

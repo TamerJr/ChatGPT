@@ -1,28 +1,32 @@
 .Main{
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     justify-content: center;
     align-items: center;
     font-family: var(--font-family);
+    margin-bottom:2rem ;
+    overflow: hidden;
 }
 .Left{
     display: flex;
     flex-direction: column;
 }
 .Right{
+    width: 100%;
+    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
-    height: 500px;
 }
 .Right img{
-    height: 80%;
+    width: 90%;
+    object-fit: contain;
 }
 .Left .Header{
     margin-bottom: 1rem;
 }
 .Left .Header h1 {
-    font-size: 52px;
+    font-size: 38px;
     background-image:  var(--gradient-text);
     background-size: 100%;
   -webkit-background-clip: text;
@@ -31,7 +35,7 @@
 .Left .Description p{
     color: var(--color-text);
     line-height: 27px;
-    font-size: 19px;
+    font-size: 15px;
     font-weight: lighter;
 }
 .Left .Email {
@@ -75,93 +79,20 @@
     margin-left: 1rem ;
     color: var(--color-text);
 }
-@media only screen and (max-width : 1024px) {
-    .Left .Header h1 {
-        font-size: 42px;
-    }
-    .Left .Description p{
-        color: var(--color-text);
-        line-height: 20px;
-        font-size: 15px;
-        font-weight: light;
-    }
-    .Right{
+@media only screen and (max-width : 650px) {
+    .Main{
         display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 450px;
+        flex-direction: column;
+        
     }
-
-
-}
-@media only screen and (max-width : 970px) {
     .Left .Header h1 {
         font-size: 32px;
     }
     .Left .Description p{
-        font-size: 12px;
-    }
-    .Left .People p{
-        font-size:x-small;
-    }
-}
-@media only screen and (max-width : 845px) {
-    .Left .Header h1 {
-        font-size: 25px;
-    }
-    .Left .Description p{
-        font-size: xx-small;
-    }
-    .Left .People p{
-        font-size:xx-small;
-    }
-    .Right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-    }
 
-}
-@media only screen and (max-width : 725px) {
-    .Main{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        font-family: var(--font-family);
-    }
-
-}
-@media only screen and (max-width : 480px) {
-    .Left{
-        display: flex;
-        flex-direction: column;
-        width: 100%;
+        line-height: 27px;
+        font-size: 13px;
 
     }
-    .Right{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-        height: 300px;
-    }
-    .Left .Email .npt{
-        padding: .4rem ;
-        background-color: var(--color-blog);
-        color: aliceblue;
-        width: 70%;
-    
-    } 
-    .Left .Email .btn{
-        padding:.54rem .5rem;
-        color: aliceblue;
-        font-size: x-small;
-    
-    }
-
 
 }

@@ -1,0 +1,35 @@
+.sign{
+    background: var(--gradient-bar);
+    display: flex;
+    padding: 2rem ;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-family: var(--font-family);
+    width: 100%;
+    border-radius: 10px;
+}
+.sign-text {
+    color: #000;
+   
+}
+.btn-container input {
+    background-color: black;
+    color: white;
+    border-radius: 25px;
+    border: none;
+    padding: .7rem 2.5rem;
+    font-size: 14px;
+}
+.sign-text p{
+    font-size: 10px;
+}
+.sign-text h4{
+    font-size: 24px;
+}
+@media only screen and (max-width: 900px){
+    .sign .sign-text{
+        margin-bottom: 2rem;
+    }
+
+}

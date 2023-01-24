@@ -15,8 +15,12 @@ a{
     text-decoration: none;
 }
 .container{
-  margin: 0 5rem;
-  overflow: hidden;
+  width :100%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
  
 }
 .scale-up-center {
@@ -46,4 +50,14 @@ a{
     -webkit-transform: scale(1);
             transform: scale(1);
   }
+}
+
+@media only screen and (max-width:610px){
+  .container{
+    width: 100%;
+  }
+  body{
+    margin:0 .1rem;
+  }
+
 }

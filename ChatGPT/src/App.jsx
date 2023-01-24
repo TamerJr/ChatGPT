@@ -1,5 +1,6 @@
-import { Navbar,Main,Feeds,Desc} from "./index"
+import { Navbar,Main,Feeds,Sign,Footer, Fields, Description,Blogs} from "./index"
 import "./App.css"
+import MyApp from "./Components/myApps/MyApp"
 function App() {
   return (
     <div className="App container">
@@ -8,7 +9,12 @@ function App() {
         <Main/>
       </div>
       <Feeds/>
-      <Desc/>
+      <Fields/>
+      <Description/>
+      <MyApp/>
+      <Sign/>
+      <Blogs/>
+      <Footer/>
     </div>
   )
 }

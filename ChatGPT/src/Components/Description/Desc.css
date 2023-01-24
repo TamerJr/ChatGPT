@@ -1,0 +1,63 @@
+.Desc{
+    display: grid;
+    grid-template-columns: 1fr;
+    font-family: var(--font-family);
+    width: 100%;
+ 
+}
+.Headers{
+    height: 3px;
+    width: 25px;
+    background:var(--gradient-bar);
+}
+.Description p{
+    color: var(--color-text);
+}
+.Header-Name{
+    color:white;
+    font-weight: bold;
+    margin-top: 1rem;
+    text-align: center;
+}
+.Header-Name h3{
+    font-size: 17px;
+}
+.Title{
+    margin-bottom: .5rem;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    align-items: flex-start;
+ 
+}
+.Description{
+    font-size:16px;
+    line-height: 20px;
+    color: var(--color-text);
+    width: 80%;
+}
+@media only screen and (max-width :800px){
+    .Desc{
+        flex-wrap: nowrap;
+    }
+    .Description {
+        width: 90%;
+        margin-left: 1rem;
+    }
+    .Description p{
+        font-size: smaller;
+    }
+}
+@media only screen and (max-width :600px){
+    .Desc{
+        flex-direction: column;
+    }
+    .Title{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    
+}

@@ -1,8 +1,22 @@
 import React from 'react'
-
-const Desc = () => {
+import "./Desc.css"
+const Desc = ({name,data}) => {
   return (
-    <div className='Desc' id='Desc'>Desc</div>
+    <div className='Desc' >
+      <div className='Title'>
+        <div className='Headers'></div>
+        <div className='Header-Name'>
+          <h3>
+            {name}
+          </h3>
+        </div>
+      </div>
+      <div className='Description'>
+        <p>
+          {data}
+        </p>
+      </div>
+    </div>
   )
 }
 

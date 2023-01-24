@@ -1,0 +1,33 @@
+.Infos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    font-family: var(--font-family);
+}
+.left{
+    margin-left: 2rem;
+}
+.left h1{
+    background-image: var(--gradient-text);
+    -webkit-background-clip: text;
+    -moz-background-clip:text;
+    -webkit-text-fill-color: transparent;
+    -moz-text-fill-color:transparent;
+    margin-bottom: 2rem;
+}
+.left p{
+    color: var(--color-subtex);
+    font-size: smaller;
+}
+.Service{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+.Service .dash{
+    width :12px ;
+    height: 4px;
+    background-image: var(--gradient-text);
+}
